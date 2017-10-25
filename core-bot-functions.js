@@ -47,7 +47,7 @@ module.exports = function(bot, taIDs) {
     if (message.type === "message" && message.text !== undefined && message.text.indexOf(bot.mention) > -1) {
       // State Message checks
       var statusMessage     = message.text.indexOf("status") > -1,
-          queueMeMessage    = message.text.indexOf("queue me") > -1 || message.text.indexOf("q me") > -1,
+          queueMeMessage    = message.text.indexOf("queue me") > -1 || message.text.indexOf("q me") > -1 || message.text.indexOf("Q me") > -1 || message.text.indexOf("Queue me") > -1,
           removeMeMessage   = message.text.indexOf("remove me") > -1,
           nextMessage       = message.text.indexOf("next") > -1 && taIDs.includes(message.user),
           helpMessage       = message.text.indexOf("help") > -1,

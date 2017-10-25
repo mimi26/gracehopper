@@ -23,7 +23,8 @@ const Gainor              = process.env.GAINOR,
       Dov                 = process.env.DOV,
       Taj                 = process.env.TAJ,
       Kyle                = process.env.KYLE;
-let taIDs = `${Taka},${Gainor},${Dov},${Taj},${Kyle}`.split(",");
+      Mimi                = process.env.MIMI;
+let taIDs = `${Taka},${Gainor},${Dov},${Taj},${Kyle},${Mimi}`.split(",");
 
 // initializing bot with our botkey
 var bot = new slackbot(botKey);
