@@ -14,7 +14,7 @@ var botKey = process.env.BOT_KEY;
 
 // This is where the TA id's go
 // open slack in Chrome, inspect a conversation with Dev Tools and
-// look for data-memner-id and that will give you the ID of that user
+// look for data-member-id and that will give you the ID of that user
 const Gainor              = process.env.GAINOR,
       JasonAndrada        = process.env.JASONANDRADA,
       Taka                = process.env.TAKA,
@@ -24,7 +24,11 @@ const Gainor              = process.env.GAINOR,
       Taj                 = process.env.TAJ,
       Kyle                = process.env.KYLE;
       Mimi                = process.env.MIMI;
-let taIDs = `${Taka},${Gainor},${Dov},${Taj},${Kyle},${Mimi}`.split(",");
+      Dain                = process.env.DAIN;
+      Ryan                = process.env.RYAN;
+      Peter               = process.env.PETER;
+      David               = process.env.David;
+let taIDs = `${Ryan},${Dain},${Taka},${Gainor},${Dov},${Taj},${Kyle},${Mimi},${Peter},${David}`.split(",");
 
 // initializing bot with our botkey
 var bot = new slackbot(botKey);

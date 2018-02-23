@@ -75,8 +75,8 @@ module.exports = function(bot, taID) {
       var command = paramify(message);
       if ((command[0] === "I" || command[0] === "i") && command[1] === "am" && (command[2] === "here" || command[2] === "here!")) {
         bot.api("users.info", {user: message.user}, function(data) {
-          var currentTA = data.user;
-          var botMessage =  currentTA.profile.real_name + " is in the SRC, located at the back of the 4th floor. Need help? Queue up! (after you Google your question first, of course) :the-more-you-know:";
+					var currentTA = data.user;
+					var botMessage =  currentTA.profile.real_name + " is in the SRC, located at the back of the 4th floor. Need help? Queue up! (after you Google your question first, of course) :the-more-you-know:";
           bot.sendMessage(message.channel, botMessage);
         })
       }
