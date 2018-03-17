@@ -27,7 +27,7 @@ const Gainor              = process.env.GAINOR,
       Dain                = process.env.DAIN;
       Ryan                = process.env.RYAN;
       Peter               = process.env.PETER;
-      David               = process.env.David;
+      David               = process.env.DAVID;
       Michael             = process.env.MICHAEL;
 let taIDs = `${Ryan},${Dain},${Taka},${Gainor},${Dov},${Taj},${Kyle},${Mimi},${Peter},${David},${Michael}`.split(",");
 
